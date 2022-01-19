@@ -1,0 +1,6 @@
+loadoff cyclohexane.lib
+CYCLO = loadpdb cyh_lastframe.pdb
+# Prequilibrated Box Size
+set CYCLO cap {35.,35.,35.,35.}
+saveoff CYCLO solvent_eqbox.lib
+quit
