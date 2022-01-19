@@ -1,0 +1,22 @@
+#------------------------------|Custom Solvent Box Prequilibrated| ---------------
+# Createing Library Files for Prequilibrated Solvent Box
+# Creating Single Solvent Library file
+# Important: Keep Same forcefield libraries for all FFs
+source leaprc.gaff 
+solvent_molecule = loadmol2 cyclohexane_gs.mol2
+saveoff solvent_molecule cyclohexane_gs.lib
+
+loadoff cyclohexane_gs.lib
+CYCLO = cyclohexane_lastframe.pdb
+# Size of the Box should be determined by final dye-solvent box or cap size
+# Prequilibrated Box Size for PBC/AIMD Calculations
+
+set CYCLO box {35.,35.,35.}  
+# Use set CYCLO cap {35.,35.,35.} 
+# For Droplet Model
+
+# Saving EQ-Box Parameters
+saveoff CYCLO cyclohexane_eqbox.lib
+savepdb CYCLO cyclohexane_eqbox.pdb
+quit
+#---------------------------------|End of File|-----------------------------------

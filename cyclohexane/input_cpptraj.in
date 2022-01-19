@@ -1,0 +1,6 @@
+parm cyh_60A_box.prmtop
+trajin reimaged_pressure.mdcrd 99 last
+
+trajout test_lastframe.pdb pdb onlyframes
+go
+quit
