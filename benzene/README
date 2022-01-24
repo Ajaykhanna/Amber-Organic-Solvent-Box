@@ -1,0 +1,23 @@
+ _______________________________________________________________
+|#----Developer !nfo------#                                     |
+|Name: Ajay Khanna                                              |
+|Year: 3rd                                                      |
+|Position: PhD Candidate                                        |
+|                                                               |
+|#----Single Molecule----#                                      |
+|Optimization: B3LYP/6-31G(d)                                   |
+|Solvent: BENZENE (IEF-PCM)                                     |
+|Software: Gaussian16                                           |
+|Date: Jan.24.2021                                              |
+|Place: UC Merced                                               |
+|Lab: Dr. Isborn's Lab                                          |
+|                                                               |
+|#----Amber Solvent Box----#                                    |
+|Total Atoms: 73068                                             |
+|Charges: BCC                                                   |
+|ForceField: GAFF                                               |
+|Box: Cubic                                                     |
+|EQBox-Dimensions: 96.366   98.238   98.470  90.00  90.00  90.00|                                        
+|Additional: Droplet                                            |
+|Radius: 35.0A                                                  |
+|_______________________________________________________________|

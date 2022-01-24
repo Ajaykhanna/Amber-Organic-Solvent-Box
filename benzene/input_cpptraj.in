@@ -1,0 +1,6 @@
+parm benzene_100Angs_box.prmtop
+trajin reimaged_pressure.mdcrd 249 last
+
+trajout lastframe.pdb pdb onlyframes 1
+go
+quit

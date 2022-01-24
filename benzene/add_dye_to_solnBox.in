@@ -1,0 +1,14 @@
+source leaprc.gaff
+# Solvating Dye with PreEquilibrated Solvent Box
+dye = loadmol2 BsubPCl_camb3lyp.mol2
+loadamberparams BsubPCl_camb3lyp.frcmod
+check dye
+copy_dye = copy dye
+
+loadoff BEN_eqbox.lib
+# BENZ will be loaded from .lib file
+solvatecap copy_dye BEN copy_dye.1 35.0
+savepdb copy_dye bsubpc_benzene_droplet.pdb
+saveamberparm copy_dye bsubpc_benzene_droplet.prmtop bsubpc_benzene_droplet.inpcrd
+
+quit

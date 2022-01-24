@@ -1,0 +1,21 @@
+# Creating Sinlge Benzene OFF Lib File
+source leaprc.gaff
+# BEN is same as in benzene_lastframe.pdb
+# # This name should be same as in trajectory or prmtop files
+# # otherwise would create a problem
+BEN = loadmol2 benzene_gs.mol2
+saveoff BEN benzene.lib
+#
+# # Loading Beneze OFF file
+loadoff benzene.lib
+benzene = loadpdb benzene_lastframe.pdb
+# Creating a Eq-Droplet
+set benzene cap {35.,35.,35.,35.}
+saveoff benzene BEN_eqdrop.lib
+
+# Uncomment if you need to 
+# Create a EQBOX
+set benzene box {50.,50.,50.}
+saveoff benzene BEN_eqbox.lib
+quit
+#
