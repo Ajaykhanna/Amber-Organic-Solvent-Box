@@ -18,7 +18,7 @@ Name: Acetonitrile (ACNEQBOX)                                   |
 |ForceField: GAFF2                                              |
 |Box: Cubic                                                     |
 |EQBox-Dimensions: 91.788   95.253   94.965  90.00  90.00  90.00|
-| Post NPT Equilibration Density:                               |
+|Post NPT Equilibration Density:                               |
 | Min: 0.7216, Max: 0.7267, Avg: 0.7240, STD: 0.0006            |
 |Additional                                                     |
 | Droplet                                                       |
