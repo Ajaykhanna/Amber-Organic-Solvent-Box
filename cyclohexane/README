@@ -1,26 +1,4 @@
-<<<<<<< HEAD
- _______________________________________________________________
-|#----Developer !nfo------# |
-|Name: Ajay Khanna                                              |
-|Year: 3rd                                                      |
-|Position: PhD Candidate                                        |
-|                                                               |
-|#----Single Molecule----#                                      |
-|Optimization: B3LYP/6-31G(d)                                   |
-|Solvent: Cyclohexane (IEF-PCM)                                 |
-|Software: Gaussian16                                           |
-|Date: Jan.15.2021                                              |
-|Place: UC Merced                                               |
-|Lab: Dr. Isborn's Lab                                          |
-|                                                               |
-|#----Amber Solvent Box----#                                    |
-|Total Atoms: 90702                                             |
-|Charges: BCC                                                   |
-|ForceField: GAFF                                               |
-|Box: Cubic                                                     |
-|EQBox-Dimensions: 96.938   99.218   98.098  90.00  90.00  90.00|                                        
-|_______________________________________________________________|
-=======
+```python
  _____________________________________________________________
 |#----Developer !nfo------#									                          |
 |Name: Ajay Khanna                                            |
@@ -42,4 +20,4 @@
 |Box: Cubic                                                   |
 |Box-Dimensions: 96.938   99.218   98.098  90.00  90.00  90.00|                                        
 |_____________________________________________________________|
->>>>>>> 9dcd503ab9394d4b22881ad291e6f13ebf5cfc16
+```
