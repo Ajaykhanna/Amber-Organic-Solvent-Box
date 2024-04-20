@@ -1,0 +1,8 @@
+source leaprc.gaff2
+ACN = loadmol2 acn_clean.mol2
+saveoff ACN acn.lib
+loadoff acn.lib
+ACNEQBOX = loadpdb acn_lastframe_npt_equil.pdb
+set ACNEQBOX box {50.,50.,50.}
+saveoff ACNEQBOX ACNEQBOX.lib
+quit

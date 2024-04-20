@@ -1,0 +1,20 @@
+# Create ACN Solvent BOX
+# Load Single Molecule Files
+
+# Load GAFF2 ForceField
+source leaprc.gaff2
+acn = loadmol2 acn_clean.mol2
+loadamberparams acn_clean.frcmod
+check acn
+
+copy_acn = copy acn
+
+solvateBox copy_acn acn 50. iso
+# Iso tries to keep box Cubic
+# What ever box size you want just divide that number by 2 to get right box size
+# Here 50. means box dimensions will be ~100., 100., 100.
+
+savepdb copy_acn acn_100Angs_box.pdb
+saveAmberParm copy_acn acn_100Angs_box.prmtop acn_100Angs_box.rst7
+quit
+

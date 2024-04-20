@@ -1,0 +1,14 @@
+source leaprc.gaff2
+# Solvating Dye with PreEquilibrated Solvent Box
+dye = loadmol2 benzene_processed.mol2 
+loadamberparams benzene_processed.frcmod
+check dye
+copy_dye = copy dye
+
+loadoff ACNEQBOX.lib
+# ACETONITRILE EQBOX will be loaded from .lib file
+solvatecap copy_dye ACNEQBOX copy_dye.1 15.0
+savepdb copy_dye benzene_acetonitrile_droplet.pdb
+saveamberparm copy_dye benzene_acetonitrile_droplet.prmtop benzene_acetonitrile_droplet.inpcrd
+
+quit

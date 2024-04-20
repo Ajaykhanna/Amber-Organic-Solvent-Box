@@ -1,0 +1,14 @@
+# 04/20/24 14:30:29
+parm ../acn_100Angs_box.prmtop
+trajin pressure.mdcrd
+autoimage
+trajout acn_lastframe_npt_equil.pdb onlyframes 1,499-500
+go
+quit
+# 04/20/24 14:36:27
+parm ../acn_100Angs_box.prmtop
+trajin pressure.mdcrd lastframe
+autoimage
+trajout acn_lastframe_npt_equil.pdb
+go
+quit
